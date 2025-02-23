@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hypper AI - Inteligência Criativa</title>
+    
+    <!-- Importando a fonte Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;900&display=swap" rel="stylesheet">
+
     <style>
         /* Resetando margens e bordas */
         * {
@@ -21,7 +25,7 @@
             height: 100vh;
             background-color: #000000;
             color: #fff;
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             text-align: center;
             padding: 20px;
         }
@@ -35,37 +39,49 @@
             max-width: 600px;
         }
 
-        /* Imagem da logo */
+        /* Logo */
         .logo {
-            max-width: 80%;
+            max-width: 70%;
             height: auto;
             margin-bottom: 15px;
         }
 
-        /* Texto do Einstein */
-        .quote {
-            font-size: 1em;
-            color: #CCCCCC; /* Cinza claro para suavidade */
-            font-style: italic;
-            max-width: 90%;
-            line-height: 1.4;
+        /* Texto "Inteligência Criativa" */
+        .subtitle {
+            font-size: 1rem;
+            font-weight: 400;
+            color: #CCCCCC;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
-        /* Nome do Einstein */
+        /* Citação do Einstein */
+        .quote {
+            font-size: 0.9rem;
+            font-style: italic;
+            color: #BBBBBB;
+            text-align: justify;
+            max-width: 90%;
+            line-height: 1.4;
+            margin-top: 10px;
+        }
+
+        /* Nome "Albert Einstein" */
         .author {
-            font-size: 0.9em;
-            font-weight: bold;
+            font-size: 0.8rem;
+            font-weight: 900;
             color: #AAAAAA;
+            text-transform: uppercase;
             margin-top: 5px;
         }
 
-        /* Ajustes para telas menores */
+        /* Responsividade */
         @media (max-width: 600px) {
             .quote {
-                font-size: 0.9em;
+                font-size: 0.8rem;
             }
             .author {
-                font-size: 0.8em;
+                font-size: 0.7rem;
             }
         }
     </style>
@@ -73,11 +89,12 @@
 <body>
     <div class="container">
         <img src="logo-hypper-ai.png" alt="Logo Hypper AI" class="logo">
+        <p class="subtitle">Inteligência Criativa</p>
         <p class="quote">
             "A imaginação é mais importante que o conhecimento. Pois o conhecimento é limitado, 
             enquanto a imaginação abrange o mundo, estimulando o progresso, dando origem à evolução."
         </p>
-        <p class="author">- Albert Einstein</p>
+        <p class="author">Albert Einstein</p>
     </div>
 </body>
 </html>
