@@ -48,27 +48,29 @@
 
         /* Mensagem do Einstein */
         .message {
-            font-size: 1.2em;
+            font-size: 1em; /* Reduzida em 2 pontos */
             font-style: italic;
             font-family: 'Poppins', sans-serif;
             font-weight: 300;
         }
 
-        /* Nome Einstein em destaque */
+        /* Nome Einstein em destaque, alinhado à direita */
         .author {
-            font-size: 1.2em;
+            font-size: 0.9em; /* Reduzida em 1 ponto */
             font-family: 'Poppins', sans-serif;
             font-weight: 900;
+            text-align: right;
+            width: 100%;
             margin-top: 5px;
         }
 
         /* Responsividade */
         @media (max-width: 600px) {
             .message {
-                font-size: 1em;
+                font-size: 0.9em;
             }
             .author {
-                font-size: 1em;
+                font-size: 0.8em;
             }
         }
     </style>
