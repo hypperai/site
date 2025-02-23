@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hypper AI - Inteligência Criativa</title>
+
+    <!-- Importando a fonte Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300;1,400&family=Poppins:wght@900&display=swap" rel="stylesheet">
+
     <style>
         /* Resetando margens e bordas */
         * {
@@ -21,40 +25,49 @@
             height: 100vh;
             background-color: #000000;
             color: #fff;
-            font-family: Arial, sans-serif;
-            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            text-align: left;
+            padding: 20px;
         }
 
         /* Contêiner principal */
         .container {
             display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: flex-start;
             width: 90%;
             max-width: 600px;
         }
 
-        /* Imagens responsivas */
-        .logo, .einstein {
+        /* Logo responsiva */
+        .logo {
             max-width: 100%;
             height: auto;
-        }
-
-        /* Ajuste de espaçamento */
-        .logo {
             margin-bottom: 20px;
         }
 
         /* Mensagem do Einstein */
         .message {
-            font-style: italic;
             font-size: 1.2em;
-            margin-top: 10px;
+            font-style: italic;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 300;
         }
 
-        /* Ajustes para telas menores */
+        /* Nome Einstein em destaque */
+        .author {
+            font-size: 1.2em;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 900;
+            margin-top: 5px;
+        }
+
+        /* Responsividade */
         @media (max-width: 600px) {
             .message {
+                font-size: 1em;
+            }
+            .author {
                 font-size: 1em;
             }
         }
@@ -63,7 +76,8 @@
 <body>
     <div class="container">
         <img src="logo-hypper-ai.png" alt="Logo Hypper AI" class="logo">
-         <p class="message">"A imaginação é mais importante que o conhecimento." <br/> Albert Einstein</p>
+        <p class="message">"A imaginação é mais importante que o conhecimento."</p>
+        <p class="author">Einstein</p>
     </div>
 </body>
 </html>
