@@ -3,11 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hypper AI - Inteligência Criativa</title>
-
-    <!-- Importando a fonte Poppins -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300;1,400&family=Poppins:wght@900&display=swap" rel="stylesheet">
-
+    <title>Hypper AI</title>
     <style>
         /* Resetando margens e bordas */
         * {
@@ -21,70 +17,29 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-direction: column;
             height: 100vh;
-            background-color: #000000;
+            background-color: #000;
             color: #fff;
-            font-family: 'Poppins', sans-serif;
-            text-align: left;
-            padding: 20px;
+            font-family: Arial, sans-serif;
         }
 
-        /* Contêiner principal */
+        /* Contêiner da logo */
         .container {
             display: flex;
             flex-direction: column;
-            align-items: flex-start;
-            width: 90%;
-            max-width: 600px;
-            position: relative;
+            align-items: center;
         }
 
         /* Logo responsiva */
         .logo {
-            max-width: 100%;
+            max-width: 100%; /* Responsivo */
             height: auto;
-            margin-bottom: 20px;
-        }
-
-        /* Mensagem do Einstein */
-        .message {
-            font-size: 0.9em; /* Reduzida em 1 tamanho */
-            font-style: italic;
-            font-family: 'Poppins', sans-serif;
-            font-weight: 300;
-            position: relative;
-            top: -1px; /* Subindo 1px */
-            width: fit-content;
-        }
-
-        /* Nome Einstein em destaque */
-        .author {
-            font-size: 1.1em; /* Aumentado em 1 tamanho */
-            font-family: 'Poppins', sans-serif;
-            font-weight: 900;
-            position: relative;
-            top: -1px; /* Subindo 1px junto com a frase */
-            left: 50%; /* Posiciona na metade da frase */
-            transform: translateX(-50%); /* Alinha pelo meio do texto */
-        }
-
-        /* Responsividade */
-        @media (max-width: 600px) {
-            .message {
-                font-size: 0.8em;
-            }
-            .author {
-                font-size: 1em;
-            }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <img src="logo-hypper-ai.png" alt="Logo Hypper AI" class="logo">
-        <p class="message">"A imaginação é mais importante que o conhecimento."</p>
-        <p class="author">Albert Einstein</p>
     </div>
 </body>
 </html>
