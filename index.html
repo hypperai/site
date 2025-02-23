@@ -3,11 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hypper AI</title>
-    
-    <!-- Importando a fonte Poppins -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;900&display=swap" rel="stylesheet">
-
+    <title>Hypper AI - Inteligência Criativa</title>
     <style>
         /* Resetando margens e bordas */
         * {
@@ -25,40 +21,40 @@
             height: 100vh;
             background-color: #000000;
             color: #fff;
-            font-family: 'Poppins', sans-serif;
-            padding: 20px;
+            font-family: Arial, sans-serif;
+            text-align: center;
         }
 
         /* Contêiner principal */
         .container {
             display: flex;
             flex-direction: column;
-            align-items: flex-start;
+            align-items: center;
             width: 90%;
             max-width: 600px;
         }
 
-        /* Logo */
-        .logo {
-            max-width: 70%;
+        /* Imagens responsivas */
+        .logo, .einstein {
+            max-width: 100%;
             height: auto;
-            margin-bottom: 15px;
         }
 
-        /* Frase curta */
-        .quote {
-            font-size: 1rem;
-            font-style: italic;
-            color: #BBBBBB;
-            text-align: left;
-            line-height: 1.3;
+        /* Ajuste de espaçamento */
+        .logo {
+            margin-bottom: 20px;
+        }
+
+        /* Mensagem do Einstein */
+        .message {
+            font-size: 1.2em;
             margin-top: 10px;
         }
 
-        /* Responsividade */
+        /* Ajustes para telas menores */
         @media (max-width: 600px) {
-            .quote {
-                font-size: 0.9rem;
+            .message {
+                font-size: 1em;
             }
         }
     </style>
@@ -66,7 +62,8 @@
 <body>
     <div class="container">
         <img src="logo-hypper-ai.png" alt="Logo Hypper AI" class="logo">
-        <p class="quote">Imaginação cria futuro.</p>
+        <img src="einstein.png" alt="Einstein" class="einstein">
+        <p class="message">"A imaginação é mais importante que o conhecimento." - Albert Einstein</p>
     </div>
 </body>
 </html>
