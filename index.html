@@ -37,6 +37,7 @@
             align-items: flex-start;
             width: 90%;
             max-width: 600px;
+            position: relative;
         }
 
         /* Logo responsiva */
@@ -48,29 +49,33 @@
 
         /* Mensagem do Einstein */
         .message {
-            font-size: 1em; /* Reduzida em 2 pontos */
+            font-size: 0.9em; /* Reduzida em 1 tamanho */
             font-style: italic;
             font-family: 'Poppins', sans-serif;
             font-weight: 300;
+            position: relative;
+            top: -1px; /* Subindo 1px */
+            width: fit-content;
         }
 
-        /* Nome Einstein em destaque, alinhado à direita */
+        /* Nome Einstein em destaque */
         .author {
-            font-size: 0.9em; /* Reduzida em 1 ponto */
+            font-size: 1.1em; /* Aumentado em 1 tamanho */
             font-family: 'Poppins', sans-serif;
             font-weight: 900;
-            text-align: right;
-            width: 100%;
-            margin-top: 5px;
+            position: relative;
+            top: -1px; /* Subindo 1px junto com a frase */
+            left: 50%; /* Posiciona na metade da frase */
+            transform: translateX(-50%); /* Alinha pelo meio do texto */
         }
 
         /* Responsividade */
         @media (max-width: 600px) {
             .message {
-                font-size: 0.7em;
+                font-size: 0.8em;
             }
             .author {
-                font-size: 0.7m;
+                font-size: 1em;
             }
         }
     </style>
@@ -79,7 +84,7 @@
     <div class="container">
         <img src="logo-hypper-ai.png" alt="Logo Hypper AI" class="logo">
         <p class="message">"A imaginação é mais importante que o conhecimento."</p>
-        <p class="author">Albert Einstein</p>
+        <p class="author">Einstein</p>
     </div>
 </body>
 </html>
