@@ -12,46 +12,72 @@
             box-sizing: border-box;
         }
 
-        /* Estilos do corpo e da página */
-        body, html {
-            height: 100%;
+        /* Estilos do corpo */
+        body {
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
+            height: 100vh;
             background-color: #000000;
             color: #fff;
             font-family: Arial, sans-serif;
-            padding: 20px; /* Adicionando padding para evitar que o conteúdo fique colado nas bordas */
+            text-align: center;
+            padding: 20px;
         }
 
-        /* Estilo da imagem para centralizar e dimensionar */
+        /* Contêiner principal */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 90%;
+            max-width: 600px;
+        }
+
+        /* Imagem da logo */
         .logo {
-            max-width: 100%; /* Ajusta a largura máxima em telas grandes */
-            width: 100%; /* Ajusta para ocupar 100% da largura disponível */
-            height: auto; /* Mantém a proporção */
+            max-width: 80%;
+            height: auto;
+            margin-bottom: 15px;
         }
 
-        /* Ajuste específico para telas pequenas */
-        @media (max-width: 600px) {
-            body {
-                padding: 10px; /* Reduzindo o padding em telas pequenas */
-            }
-            .logo {
-                max-width: 80%; /* Aumenta a largura máxima em telas pequenas */
-            }
+        /* Texto do Einstein */
+        .quote {
+            font-size: 1em;
+            color: #CCCCCC; /* Cinza claro para suavidade */
+            font-style: italic;
+            max-width: 90%;
+            line-height: 1.4;
         }
 
-        /* Ajuste de fontes para telas pequenas */
+        /* Nome do Einstein */
+        .author {
+            font-size: 0.9em;
+            font-weight: bold;
+            color: #AAAAAA;
+            margin-top: 5px;
+        }
+
+        /* Ajustes para telas menores */
         @media (max-width: 600px) {
-            body {
-                font-size: 14px; /* Reduzindo o tamanho da fonte em telas pequenas */
+            .quote {
+                font-size: 0.9em;
+            }
+            .author {
+                font-size: 0.8em;
             }
         }
     </style>
 </head>
 <body>
-    <div>
+    <div class="container">
         <img src="logo-hypper-ai.png" alt="Logo Hypper AI" class="logo">
+        <p class="quote">
+            "A imaginação é mais importante que o conhecimento. Pois o conhecimento é limitado, 
+            enquanto a imaginação abrange o mundo, estimulando o progresso, dando origem à evolução."
+        </p>
+        <p class="author">- Albert Einstein</p>
     </div>
 </body>
 </html>
